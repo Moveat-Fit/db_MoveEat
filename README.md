@@ -17,7 +17,6 @@ Antes de começar, você precisará instalar o seguinte:
 A biblioteca `pyodbc` é utilizada para conectar-se ao SQL Server a partir do Python. Instale-a usando pip:
 pip install pyodbc
 
-Copy code
 
 
 ## Verificando os Drivers Instalados
@@ -27,12 +26,14 @@ Para verificar se o driver necessário está instalado, você pode utilizar o se
 ```python
 import pyodbc
 print(pyodbc.drivers())
-Conectando ao Banco de Dados
+
+
+
+## Conectando ao Banco de Dados
+
 Para testar a funcionalidade de conexão com o banco de dados, utilize a função connect_to_database definida abaixo:
 
-python
-Copy code
-
+```python
 def connect_to_database():
     try:
         cnxn = pyodbc.connect(
@@ -53,6 +54,7 @@ def connect_to_database():
 connection = connect_to_database()
 Suporte
 Para obter ajuda ou relatar problemas, abra uma issue neste repositório GitHub.
+
 
 Contribuições
 Contribuições são bem-vindas! Para contribuir com o projeto, por favor faça um fork do repositório e submeta um pull request com suas alterações.
