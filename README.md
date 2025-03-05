@@ -28,11 +28,13 @@ Para verificar se o driver necessário está instalado, você pode utilizar o se
 import pyodbc
 print(pyodbc.drivers())
 Conectando ao Banco de Dados
+
+
+## Funcionalidade do banco
+
 Para testar a funcionalidade de conexão com o banco de dados, utilize a função connect_to_database definida abaixo:
 
-python
-Copy code
-
+```python
 def connect_to_database():
     try:
         cnxn = pyodbc.connect(
