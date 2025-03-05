@@ -35,6 +35,7 @@ Conectando ao Banco de Dados
 Para testar a funcionalidade de conexão com o banco de dados, utilize a função connect_to_database definida abaixo:
 
 ```python
+
 def connect_to_database():
     try:
         cnxn = pyodbc.connect(
